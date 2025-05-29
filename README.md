@@ -27,7 +27,7 @@ This project provides a complete solution for managing patient data through both
 ## 📁 Project Structure
 
 ```
-PatientVault/
+Patient_Data_Vault/
 │
 ├── main.py                 # FastAPI application with API endpoints
 ├── streamlit_app.py        # Streamlit web interface
@@ -46,7 +46,7 @@ PatientVault/
 ### Step 1: Clone the Repository
 ```bash
 git clone <repository-url>
-cd PatientVault
+cd Patient_Data_Vault
 ```
 
 ### Step 2: Create Virtual Environment (Recommended)
@@ -223,7 +223,7 @@ curl http://localhost:8000/view_patients_data
 # Test adding a patient
 curl -X POST http://localhost:8000/add_patient \
      -H "Content-Type: application/json" \
-     -d '{"id":"TEST001","name":"Test User","age":25,"gender":"Male","height":180,"weight":75}'
+     -d '{"id":"TEST001","name":"Test User","age":25,"gender":"Male","height":1.80,"weight":75}'
 ```
 
 ## 🔄 Data Backup and Recovery
